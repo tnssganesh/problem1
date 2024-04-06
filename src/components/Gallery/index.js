@@ -75,32 +75,25 @@ const imagesList = [
   },
 ]
 
-// Write your code here.
-
-// FIX3: class should be declared with keyword class
 class Gallery extends Component {
   state = {
     currentIng: 0,
   }
 
   updateBalance = id => {
-    // FIX4: setState spelling should be as mentioned below
     console.log('hi boy')
     this.setState({currentIng: id})
   }
 
   render() {
-    // FIX5: The prop name here is denominationsList
-    //  const {Images} = this.props
     const {currentIng} = this.state
     const name = 'Sarah Williams'
     console.log('hi')
-    // console.log(imagesList[currentIng].imageUrl)
-    // const initial = name.slice(0, 1)
+
     return (
       <div>
         <div>
-          <img alt="imge" src={imagesList[currentIng].imageUrl} />
+          <img alt="" src={imagesList[currentIng].imageUrl} />
         </div>
         <div className="">
           <h1>Nature Photography</h1>
