@@ -93,7 +93,7 @@ class Gallery extends Component {
     return (
       <div>
         <div>
-          <img alt="" src={imagesList[currentIng].imageUrl} />
+          <img alt="imageAltText" src={imagesList[currentIng].imageUrl} />
         </div>
         <div className="">
           <h1>Nature Photography</h1>
